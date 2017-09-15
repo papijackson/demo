@@ -1,5 +1,6 @@
 package com.papijackson;
 
+import com.papijackson.demo.controller.GreetingController;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,9 +13,8 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		User user = new User();
-		user.setFirstName("fn");
-		user.setLastName("LN");
+		GreetingController controller = new GreetingController();
+		controller.greeting("Papijackson");
 		Assert.assertTrue(true);
 	}
 
